@@ -1,0 +1,73 @@
+/* style from https://planspace.org/styles/planspace.css
+   color from http://www.eclipsecolorthemes.org/?view=theme&id=14569 */
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+
+body {
+  background-color: #2B2B2B;
+  color: #A9B7C6;
+  font-size: 1.25em;
+  font-family: 'Nanum Myeongjo', serif;
+  line-height: 160%;
+  max-width: 40em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, p.date {
+  text-align: center;
+}
+
+p.date {
+  font-size: 0.75em;
+  line-height: 100%;
+  margin-top: -1.25em;
+  color: #A9B7C6;
+}
+
+pre {
+  line-height: normal;
+}
+
+a {
+  color: #CB772F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFC66D;
+}
+
+.rotate180 {
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px),
+only screen and (min--moz-device-pixel-ratio: 2) and (max-device-width: 1024px),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (max-device-width: 1024px),
+only screen and (min-device-pixel-ratio: 2) and (max-device-width: 1024px),
+only screen and (min-resolution: 192dpi) and (max-device-width: 1024px),
+only screen and (min-resolution: 2dppx) and (max-device-width: 1024px) {
+  body {
+    font-size: 2.25em;
+  }
+}
+
+@media print {
+  img {
+    max-height: 3in;
+  }
+  body {
+    font-size: 0.8em;
+  }
+}
+
